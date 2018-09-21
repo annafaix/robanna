@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  background-color: #EEEEEE;
+}
+.bigImg {
+  grid-column-start: 2;
+  height: 100vh;
+  width: auto;
+}
+.bigImg>img{
+  height: 100vh;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+}
+h1{
+  top:0;
+  text-align: center;
+}
