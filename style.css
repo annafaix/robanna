@@ -1,6 +1,9 @@
 body{
-  background-color: #EEEEEE;
   background-color: #EFE5DD;
+  background-color: #f7d9ca;
+  /* background-color: #F5E1D4; */
+
+
   display: grid;
   font-family: "Open Sans", monospace;
   font-size: 20px;
@@ -51,15 +54,28 @@ ul>li{
   list-style: none;
 }
 .landing{
+  opacity: 0;
   height: 100vh;
   grid-column: 2/ 3;
-  background-color: #EFE5DD;
+  background-color: #f7d9ca;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-
+  -webkit-transition: opacity 3s ease-in;
+      -moz-transition: opacity 3s ease-in;
+       -ms-transition: opacity 3s ease-in;
+        -o-transition: opacity 3s ease-in;
+           transition: opacity 3s ease-in;
 }
+.fade{
+  opacity:1;
+}
+/* @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} */
+
 .landing h1{
   align-self: center;
   font-family: "Homemade Apple";
@@ -72,17 +88,18 @@ ul>li{
 .landing h2{
   align-self: center;
   font-family: "Homemade Apple";
-  font-size: 30px;
-
+  font-size: 40px;
   margin: 0;
 }
 .bigImg{
   display: grid;
   grid-column: 2/ 3;
+  height: 100%;
 }
 .bigImg>img{
   width: 100%;
   height: auto;
+
   -webkit-box-shadow: 2px 2px 82px 0px rgba(0,0,0,0.42);
   -moz-box-shadow: 2px 2px 82px 0px rgba(0,0,0,0.42);
   box-shadow: 2px 2px 82px 0px rgba(0,0,0,0.42);
@@ -98,18 +115,27 @@ ul>li{
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
-  margin-top: 5%;
 }
 body>div{
   grid-column-start: 2;
   grid-column-end: 3;
   background-color: #f4f4f4;
+  text-align: center;
 
+}
+.whenWhere{
+  height: 100vh;
+  text-align: center;
+}
+.whenWhere > img{
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
 }
 
 footer{
   padding-top: 30px;
-    font-family: "Homemade Apple";
+  font-family: "Homemade Apple";
   grid-column: 1/ span 4;
   border-top: 1px solid #000;
   text-align: center;
