@@ -190,9 +190,91 @@ body>div{
 h2{
   text-align: center;
 }
+h3{
+  text-align: center;
+}
+h4{
+  text-align: center;
+}
+h5{
+  text-align: center;
+}
 p{
   padding: 20px;
 }
+
+/* Style for div containing information about car travelling */
+.howToComeBil{
+  /* background-color: #0000FF; */
+}
+.howToComeBil > div{
+    background-color: #ffe6cc;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.howToComeBil > div > div{
+    float: left;
+    background-color: #ffe6cc;
+}
+
+.left{
+
+    width: 40%;
+}
+.right{
+    width: 60%;
+}
+
+.howToComeBil > div > p{
+    /* background-color: #0000FF; */
+    padding: 0px;
+    margin-top: 10px;
+}
+.howToComeBil > div > div > li{
+    /* background-color: #0000FF; */
+    padding-left: 30px;
+}
+.howToComeBil > div > h5{
+    text-align: left;
+    margin: 0px;
+}
+.howToComeBil > div > h4{
+    text-align: left;
+}
+
+/* Style for div containing information about car travelling */
+.howToComeFlyg{
+  /* background-color: #0000FF; */
+}
+
+.howToComeFlyg > div{
+    background-color: #ffe6cc;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.howToComeFlyg > div > p{
+    /* background-color: #0000FF; */
+    padding: 0px;
+    margin-top: 10px;
+}
+.howToComeFlyg > div > li{
+    /* background-color: #0000FF; */
+    /* padding-left: 10px; */
+}
+.howToComeFlyg > div > h5{
+    text-align: left;
+    margin: 0px;
+}
+.howToComeFlyg > div > h4{
+    text-align: left;
+}
+
 .whenWhere{
   height: 100vh;
   text-align: center;
