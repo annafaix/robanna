@@ -161,13 +161,29 @@ body{
   grid-column: 2/ 3;
   height: 100%;
 }
-.bigImg>img{
+.bigImg .main-image img{
   width: 100%;
   height: auto;
 
   -webkit-box-shadow: 2px 2px 82px 0px rgba(0,0,0,0.42);
   -moz-box-shadow: 2px 2px 82px 0px rgba(0,0,0,0.42);
   box-shadow: 2px 2px 82px 0px rgba(0,0,0,0.42);
+}
+.container{
+  margin:auto;
+  background-color: #FFF;
+
+}
+.main-image img, .images img{
+  width: 100%;
+}
+.images{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  /* grid-auto-flow: row;
+  grid-auto-columns: 300px 100px; */
+  grid-auto-flow: dense;
+  grid-gap: 5px;
 }
 .text-wrapper {
   width: 100%;
