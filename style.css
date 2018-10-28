@@ -3,7 +3,6 @@ body{
   background-color: #f7d9ca;
   /* background-color: #F5E1D4; */
 
-
   display: grid;
   font-family: "Open Sans", monospace;
   font-size: 20px;
@@ -27,6 +26,7 @@ body{
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
+
 .mouse:after{
     content: '';
     position: absolute;
@@ -164,10 +164,10 @@ body{
 .bigImg .main-image img{
   width: 100%;
   height: auto;
-
+/*
   -webkit-box-shadow: 2px 2px 82px 0px rgba(0,0,0,0.42);
-  -moz-box-shadow: 2px 2px 82px 0px rgba(0,0,0,0.42);
-  box-shadow: 2px 2px 82px 0px rgba(0,0,0,0.42);
+  -moz-box-shadow: 2px 2px 82px 0px rgba(0,0,0,0.42); */
+  /* box-shadow: 0 0 0 5px #FFF, 0 5px 25px rgba(0,0,0,0.8); */
 }
 .container{
   margin:auto;
@@ -200,8 +200,14 @@ body{
 body>div{
   grid-column-start: 2;
   grid-column-end: 3;
-  text-align: center;
+  background-color: #f4f4f4;
 
+}
+h2{
+  text-align: center;
+}
+p{
+  padding: 20px;
 }
 .whenWhere{
   height: 100vh;
@@ -213,7 +219,24 @@ body>div{
   height: auto;
   opacity: 0.7;
 }
-
+.gifts{
+  height: 100vh;
+}
+.gifts .giftBtn{
+  background-color: #f7d9ca;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 3px;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: background-color .5s;
+}
+.gifts .giftBtn:hover{
+  background-color: #fff;
+  transition: background-color .5s;
+}
 footer{
   padding-top: 30px;
   font-family: "Homemade Apple";
