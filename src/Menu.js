@@ -36,45 +36,21 @@ class Menu extends Component {
     render(){
         return(
             <header>
-                <div className="hamburger-menu" onClick={this.toggle}>
+              <div className="hamburger-menu" onClick={this.toggle}>
                 <div className="menu-item"></div>
                 <div className="menu-item"></div>
                 <div className="menu-item"></div>
-                </div>
-                <nav className="menu">
-                    <ul className="menu-nav">
-                        <li className="nav-item">
-                            <a href="index.html" className="nav-link">
-                            Startsida
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="about.html" className="nav-link">
-                            Om oss
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="where.html" className="nav-link">
-                            Anmälan
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="index.html" className="nav-link">
-                            Hur kommer man dit?
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="index.html" className="nav-link">
-                            Grundläggande Slovakiska
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="index.html" className="nav-link">
-                            Andra saker att göra
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+              </div>
+              <nav className="menu">
+                <ul className="menu-nav">
+                  <li className="nav-item">Startsida</li>
+                  <li className="nav-item" onClick={()=> {this.props.changeTab("about")}}>Om oss</li>
+                  <li className="nav-item" onClick={()=> {this.props.changeTab("register")}}>Anmälan</li>
+                  <li className="nav-item" onClick={()=> {this.props.changeTab("where")}}>Hur kommer man dit?</li>
+                  <li className="nav-item" onClick={()=> {this.props.changeTab("slovak")}}>Grundläggande Slovakiska</li>
+                  <li className="nav-item">Andra saker att göra</li>
+                </ul>
+              </nav>
             </header>
         )
     }
