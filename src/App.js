@@ -45,13 +45,6 @@ class App extends Component {
           <i className="angle down icon"></i>
         </div>
         <h1>Vi ska gifta oss!</h1>
-        <div className="beginning bigImg">
-          <div className="container">
-            <div className="main-image">
-              <img src={landImg} alt="wedding_picture"/>
-            </div>
-          </div>
-        </div>
         {tab}
 
       </main>
