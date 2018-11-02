@@ -1,6 +1,6 @@
 import React,  {Component} from 'react';
 
-class Where extends Component {
+export default class How extends Component {
   constructor(props) {
     super(props);
   }
@@ -205,5 +205,3 @@ class Where extends Component {
     )
   }
 }
-
-export default Where;
