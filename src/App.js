@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import landImg from './wedding_picture.jpg';
 import flowers from './Lager 2.png';
-import './App.css';
+import './styles/App.css';
 import Menu from "./Menu.js"
 import About from "./tabs/About.js"
 import Whenwhere from "./tabs/Whenwhere.js"
