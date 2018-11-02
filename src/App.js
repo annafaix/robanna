@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import flowers from './Lager 2.png';
 import './styles/App.css';
+import './styles/Menu.css';
 import Menu from "./Menu.js"
 import About from "./tabs/About.js"
 import Whenwhere from "./tabs/Whenwhere.js"
@@ -12,18 +13,20 @@ import Otherstuff from "./tabs/Otherstuff.js"
 class App extends Component {
   constructor(props){
     super(props);
-    this.fadein = this.fadein.bind(this);
+    this.fadein = this.fadein.bind(this);  
     this.state = {
-      choosenTab: ""
+      choosenTab: ""     
     }
   }
 
   fadein(){
-      let fading = document.getElementsByClassName("landing")[0];
-      fading.className += " fade"
+      let fadingH1 = document.getElementsByTagName("h1")[0];
+      let fadingH2 = document.getElementsByTagName("h2")[0];
+      console.log(fadingH1, fadingH2)
+      fadingH1.className += "fade"
+      fadingH2.className += "fade"
   }
   changeTab = (tab)=> {
-    console.log(tab);
     this.setState({choosenTab: tab})
   }
     render() {
@@ -44,21 +47,20 @@ class App extends Component {
     }
 
     return (
-    <div className="body">
+    <div className="body" onLoad={()=>{this.fadein()}}>
       <Menu changeTab={this.changeTab}/>
       <main>
-        <div className="landing" onLoad={this.fadein}>
-          <img src={flowers} className="flowers" alt="flowers"/>
+      <img src={flowers} className="flowers" alt="flowers"/>
+        <div className="landing" >
           <h1>Anna och Robert</h1>
           <h2>8:e juni 2019</h2>
           <i className="angle down icon"></i>
         </div>
         <h1>Vi ska gifta oss!</h1>
         {tab}
-
       </main>
       <footer>
-      Made by Robert & Anna with lots of <i className="fas fa-heart"></i>
+      Made by Robert & Anna <br/>with lots of <i className="fas fa-heart"></i>
       </footer>
     </div>
 

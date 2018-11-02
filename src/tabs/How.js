@@ -7,11 +7,6 @@ export default class How extends Component {
   render(){
     return(
     <div>
-      <div className="whenWhere">
-          <h2>När och var? </h2>
-          <img src="img/lokal.jpg" alt="lokalen"/>
-          <p>Både vigsel och festen är i Kezmarok. </p>
-      </div>
       <div className="howToCome">
           <h2>Hur kommer jag dit?</h2>
           <p>

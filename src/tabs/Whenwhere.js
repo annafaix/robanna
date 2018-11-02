@@ -8,6 +8,11 @@ export default class Whenwhere extends Component {
         <p>
           Lite testtext!
         </p>
+        <div className="whenWhere">
+          <h2>När och var? </h2>
+          <img src="img/lokal.jpg" alt="lokalen"/>
+          <p>Både vigsel och festen är i Kezmarok. </p>
+      </div>
       </React.Fragment>
     )
   }
