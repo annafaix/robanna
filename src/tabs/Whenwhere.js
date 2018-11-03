@@ -1,16 +1,19 @@
 import React, {Component} from 'react'
+import church from '../church.jpg';
+import lokal from '../lokal.jpg';
+import '../styles/App.css';
 
 export default class Whenwhere extends Component {
   render(){
     return(
       <React.Fragment>
-        <h2>När och Var? That is the question!</h2>
-        <p>
-          Lite testtext!
-        </p>
         <div className="whenWhere">
-          <h2>När och var? </h2>
-          <img src="img/lokal.jpg" alt="lokalen"/>
+        <h1>Vår bröllopsdag</h1>
+          <h2>Vigseln</h2>
+          <img src={church} alt="kapell"/>
+          <p>Både vigsel och festen är i Kezmarok. </p>
+          <h2>Fest!Yeeey</h2>
+          <img src={lokal} alt="lokalen"/>
           <p>Både vigsel och festen är i Kezmarok. </p>
       </div>
       </React.Fragment>

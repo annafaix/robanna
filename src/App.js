@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import flowers from './Lager 2.png';
+
 import './styles/App.css';
 import './styles/Menu.css';
 import Menu from "./Menu.js"
@@ -9,13 +9,14 @@ import How from "./tabs/How.js"
 import Register from "./tabs/Register.js"
 import Slovak from "./tabs/Slovak.js"
 import Otherstuff from "./tabs/Otherstuff.js"
+import Landing from "./tabs/Landing.js"
 
 class App extends Component {
   constructor(props){
     super(props);
     this.fadein = this.fadein.bind(this);  
     this.state = {
-      choosenTab: ""     
+      choosenTab: "start"     
     }
   }
 
@@ -31,7 +32,7 @@ class App extends Component {
   }
     render() {
 
-    let tab = null;
+    let tab = <Landing/>;
     if(this.state.choosenTab === "about"){
       tab = <About/>
     }else if(this.state.choosenTab === "whenwhere"){
@@ -50,17 +51,10 @@ class App extends Component {
     <div className="body" onLoad={()=>{this.fadein()}}>
       <Menu changeTab={this.changeTab}/>
       <main>
-      <img src={flowers} className="flowers" alt="flowers"/>
-        <div className="landing" >
-          <h1>Anna och Robert</h1>
-          <h2>8:e juni 2019</h2>
-          <i className="angle down icon"></i>
-        </div>
-        <h1>Vi ska gifta oss!</h1>
         {tab}
       </main>
       <footer>
-      Made by Robert & Anna <br/>with lots of <i className="fas fa-heart"></i>
+        Made by Robert & Anna <br/>with lots of <i className="fas fa-heart"></i>
       </footer>
     </div>
 
