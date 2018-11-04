@@ -21,11 +21,11 @@ class App extends Component {
   }
 
   fadein(){
-      let fadingH1 = document.getElementsByTagName("h1")[0];
-      let fadingH2 = document.getElementsByTagName("h2")[0];
-      console.log(fadingH1, fadingH2)
-      fadingH1.className += "fade"
-      fadingH2.className += "fade"
+      // let fadingH1 = document.getElementsByTagName("h1")[0];
+      // let fadingH2 = document.getElementsByTagName("h2")[0];
+      // console.log(fadingH1, fadingH2)
+      // fadingH1.className += "fade"
+      // fadingH2.className += "fade"
   }
   changeTab = (tab)=> {
     this.setState({choosenTab: tab})

@@ -1,6 +1,7 @@
 .body{
-  background-color: #EFE5DD;
-  background-color: #f7d9ca;
+  
+  background-color: #ffc7c7;
+  background-color: #ffe2e2;
   display: grid;
   font-family: "Open Sans", monospace;
   font-size: 20px;
@@ -25,9 +26,10 @@
 }
 
 .landing{
-  height: 100vh;
+  min-height: 100vh;
   grid-column: 2/ 3;
-  background-color: #f7d9ca;
+  background-color: #ffe2e2;
+  background-color: #efefef;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +39,10 @@
        -ms-transition: opacity 3s ease-in;
         -o-transition: opacity 3s ease-in;
            transition: opacity 3s ease-in;
+
+           -webkit-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
+-moz-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
+box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
 }
 .fade{
   opacity:1;
@@ -90,15 +96,17 @@
 
 /* Style for div containing information about car travelling */
 .icons .fas{
-  border: 1px solid black;
-  background-color: #FFF;
-  border-radius: 5px;
+  background-color: #f6f6f6;
+  color: #8785a2;
   padding: 20px;
   cursor: pointer;
   margin: 15px;
+  -webkit-box-shadow: 0px 0px 52px 2px rgba(135,133,162,1);
+  -moz-box-shadow: 0px 0px 52px 2px rgba(135,133,162,1);
+  box-shadow: 0px 0px 52px 2px rgba(135,133,162,1);x-shadow: 0px 0px 154px -25px rgba(0,0,0,1);-shadow: 0px 0px 154px -25px rgba(56,22,56,1);
 }
 .icons .fas:hover{
-  background-color: #000;
+  background-color: #8785a2;
   color: #FFF;
 }
 .howToComeBil > div{
@@ -163,8 +171,9 @@
 }
 
 .tab{
-  /* height: 100vh; */
+  min-height: 100vh;
   text-align: center;
+  background-color: #ffe2e2
   /* background-color: #f4f4f4; */
 }
 .tab > h1{
@@ -173,15 +182,19 @@
   letter-spacing: 1px;
   text-align: center;
   margin:30px;
+  padding-top: 30px;
 }
-.tab > h2{
-  text-decoration: underline
+.tab > p {
+  padding: 30px;
 }
+
 .tab > .kapell{
-  width: 20%;
+  height: 450px;
+  width: auto;
+  margin-right: 15px;
 }
 .tab > .lokalen{
-  width: 100%;
+  width: 80%;
 }
 .gifts{
   height: 100vh;
@@ -205,7 +218,7 @@ footer{
   padding: 30px;
   font-family: "Homemade Apple";
   grid-column: 1/ span 4;
-  border-top: 1px solid #000;
+  /* border-top: 1px solid #000; */
   text-align: center;
   font-weight: 400;
 }

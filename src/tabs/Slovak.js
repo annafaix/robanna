@@ -10,7 +10,7 @@ export default class Slovak extends Component {
   render(){
     return(
       <div className="tab">
-        <h1>Grundläggande Slovakiska!</h1>
+        <h1>Hej & Ahoj!</h1>
         <p>
           Lära sig om Dobre den mm.
         </p>
