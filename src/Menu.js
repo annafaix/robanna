@@ -12,7 +12,7 @@ class Menu extends Component {
 
     toggle(){
         const hamMenu = document.querySelector(".hamburger-menu");
-        const menuDiv = document.querySelectorAll(".menu-item");
+        // const menuDiv = document.querySelectorAll(".menu-item");
         const menu = document.querySelector('.menu');
         const menuNav = document.querySelector('.menu-nav');
         const navItems = document.querySelectorAll('.nav-item')

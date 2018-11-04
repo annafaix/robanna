@@ -4,7 +4,7 @@ export default class Slovak extends Component {
   render(){
     return(
       <React.Fragment>
-      <h2>Grundläggande Slovakiska!</h2>
+      <h1>Grundläggande Slovakiska!</h1>
       </React.Fragment>
     )
   }
