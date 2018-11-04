@@ -6,9 +6,27 @@ import '../styles/App.css';
 export default class How extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      tripMethod: ""
+    }
+    this.changeMethod = this.changeMethod.bind(this);
+  }
+
+  changeMethod(method){
+    this.setState({tripMethod: method})
   }
 
   render(){
+    let method = null
+
+    if(this.state.tripMethod === "car"){
+      method = <CarTrip SelectedCarTrip={"germany"}/>
+    }else if(this.state.tripMethod === "flight"){
+      method = <FlightTrip SelectedFlightTrip={"budapest"}/>
+    }else {
+      method = null
+    }
+
     return(
       <div className="tab">
         <h1>Hur kommer jag dit?</h1>
@@ -18,11 +36,10 @@ export default class How extends Component {
           samt flyg och buss/tåg.
         </p>
         <div className="icons">
-          <i className="fas fa-car fa-4x"></i>eller
-          <i className="fas fa-plane fa-4x"></i>
+          <i className="fas fa-car fa-4x" onClick={()=>this.changeMethod("car")}></i>eller
+          <i className="fas fa-plane fa-4x" onClick={()=>this.changeMethod("flight")}></i>
         </div>
-        <CarTrip SelectedCarTrip={"germany"}/>
-        <FlightTrip SelectedFlightTrip={"budapest"}/>
+        {method}
       </div>
     )
   }

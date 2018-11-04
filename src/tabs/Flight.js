@@ -1,4 +1,4 @@
-import React,  {Component} from 'react';
+import React from 'react';
 import '../styles/TripMethod.css';
 
 function FlightTrip(props){
@@ -17,44 +17,47 @@ function FlightTrip(props){
 
   return(
     <div className="tripMethod">
-        <h3>Flyg och buss/tåg</h3>
+      <div>
+        <h2>Flyg och buss/tåg</h2>
         <p>
-            Har du inte tid eller möjlighet att köra ner så finns det flera olika
-            destinationer du kan flyga till för att snabba på resan. Priser nedan
-            är beräknade för tur och retur för en person utan incheckat bagage.
+          Har du inte tid eller möjlighet att köra ner så finns det flera olika
+          destinationer du kan flyga till för att snabba på resan. Priser nedan
+          är beräknade för tur och retur för en person utan incheckat bagage.
         </p>
         <p>
-            För resor med flyg och tåg så är alla resor beräknade fram till till
-            Poprad som är lite större stad ca. 20 minuter bilväg från Kezmarok.
-            Det bör inte vara några problem att bli upphämtad där eller ta taxi
-            därifrån, det går även att boka tåg.
+          För resor med flyg och tåg så är alla resor beräknade fram till till
+          Poprad som är lite större stad ca. 20 minuter bilväg från Kezmarok.
+          Det bör inte vara några problem att bli upphämtad där eller ta taxi
+          därifrån, det går även att boka tåg.
         </p>
-        <h5>Tips!</h5>
+        <h3>Tips!</h3>
         <p>
-            Ska du flyga ner så kolla gärna om du känner någon som ska åka ner med
-            bil. Det blir avsevärt mycket billigare att enbart ha ett litet
-            kabinbagage och inte incheckat bagage, vilket annars nästan är ett
-            krav på grund av kostym/klänning mm.
-        </p>
-        <p>
-            Tänk på kostnader som tillkommer för transfer till/från flygplats!
+          Ska du flyga ner så kolla gärna om du känner någon som ska åka ner med
+          bil. Det blir avsevärt mycket billigare att enbart ha ett litet
+          kabinbagage och inte incheckat bagage, vilket annars nästan är ett
+          krav på grund av kostym/klänning mm.
         </p>
         <p>
-            Lägg gärna en liten extra slant för att reservera plats eller till och
-            med Business Class. Det brukar inte kosta mycket mer och resan blir
-            avsevärt mycket behagligare.
+          Tänk på kostnader som tillkommer för transfer till/från flygplats!
         </p>
-
-        {FlightTripMethod}
-
+        <p>
+          Lägg gärna en liten extra slant för att reservera plats eller till och
+          med Business Class. Det brukar inte kosta mycket mer och resan blir
+          avsevärt mycket behagligare.
+        </p>
       </div>
+      <FlightTripBudapest/>
+      <FlightTripVienna/>
+      <FlightTripPrague/>
+      <FlightTripPoland/>
+    </div>
   )
 }
 
 function FlightTripBudapest(props){
   return(
     <div>
-        <h4>Flyg till Budapest och tåg till Poprad-Tatry</h4>
+        <h2>Flyg till Budapest och tåg till Poprad-Tatry</h2>
         <ul>
         <li>Uppskattad tid enkel väg: 2 timmar flyg + 5,5-8 timmar tåg</li>
         <li>Kostnad: Från ca. 1400kr flyg + 700kr tåg</li>
@@ -77,7 +80,7 @@ function FlightTripBudapest(props){
 function FlightTripVienna(props){
   return(
     <div>
-        <h4>Flyg till Wien och tåg till Poprad-Tatry</h4>
+        <h2>Flyg till Wien och tåg till Poprad-Tatry</h2>
         <ul>
         <li>Uppskattad tid enkel väg: 2 timmar flyg + 4 timmar tåg</li>
         <li>Kostnad: Från ca. 2000kr (flyg) + 400kr tåg</li>
@@ -99,7 +102,7 @@ function FlightTripVienna(props){
 function FlightTripPrague(props){
   return(
     <div>
-        <h4>Flyg till Prag och buss/tåg till Poprad-Tatry</h4>
+        <h2>Flyg till Prag och buss/tåg till Poprad-Tatry</h2>
         <ul>
         <li>Uppskattad tid enkel väg: 2 timmar flyg + 6,5 timmar tåg</li>
         <li>Kostnad flyg: Från ca. 800kr flyg + ca. 500kr buss/tåg</li>
@@ -122,7 +125,7 @@ function FlightTripPrague(props){
 function FlightTripPoland(props){
   return(
     <div>
-        <h4>Flyg till Krakow och taxi/hyrbil till Kezmarok</h4>
+        <h2>Flyg till Krakow och taxi/hyrbil till Kezmarok</h2>
         <ul>
         <li>Uppskattad tid: 2 timmar flyg + 3 timmar bil/taxi</li>
         <li>Uppskattad kostnad: ca. 800kr (flyg) + 1000kr (taxi)</li>
