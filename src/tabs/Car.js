@@ -2,15 +2,6 @@ import React from 'react';
 import '../styles/TripMethod.css';
 
 function CarTrip(props){
-  const SelectedCarTrip = props.SelectedCarTrip;
-  let CarTripMethod = null;
-
-  if(SelectedCarTrip === "germany"){
-    CarTripMethod = <CarTripGermany/>
-  }else{
-    CarTripMethod = <CarTripPoland/>
-  }
-
   return(
     <div className="tripMethod">
       <div>

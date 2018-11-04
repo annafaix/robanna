@@ -4,10 +4,11 @@ import lokal from '../lokal.jpg';
 import '../styles/App.css';
 
 export default class Whenwhere extends Component {
+/*
   constructor(props) {
     super(props);
   }
-
+*/
   render(){
     return(
       <div className="tab">
