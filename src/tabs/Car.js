@@ -28,7 +28,7 @@ function CarTrip(props){
 
 function CarTripPoland(props){
   return(
-    <div className="tripMethod">
+    <div>
         <h2>Bil genom Polen</h2>
         <ul>
         <li>Distans att köra: 30 mil till Trelleborg + 88 mil till Kezmarok</li>
@@ -51,7 +51,7 @@ function CarTripPoland(props){
 
 function CarTripGermany(props){
   return(
-    <div className="tripMethod">
+    <div>
       <h2>Bil genom Tyskland</h2>
       <ul>
           <li>Distans att köra: ca. 155 mil</li>
