@@ -1,13 +1,19 @@
 import React, {Component} from 'react'
+import '../styles/App.css';
 
 export default class Register extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render(){
     return(
-      <React.Fragment>
-        <div className="register">
-          <h2>Jag vill anmäla mig!</h2>
-        </div>
-     </React.Fragment>
+      <div className="tab">
+        <h1>Jag vill anmäla mig!</h1>
+        <p>
+          Anmälan!
+        </p>
+      </div>
     )
   }
 }
