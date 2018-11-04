@@ -10,7 +10,7 @@ function CarTrip(props){
   }else{
     CarTripMethod = <CarTripPoland/>
   }
-  
+
   return(
     <div className="tripMethod">
       <h3>Bil</h3>

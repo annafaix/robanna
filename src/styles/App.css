@@ -88,20 +88,6 @@
   text-align: center;
 }
 
-.how h1{
-  font-family: "Homemade Apple";
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-align: center;
-  margin:30px;
-}
-.how .icons{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Style for div containing information about car travelling */
 .icons .fas{
   border: 1px solid black;
@@ -176,25 +162,25 @@
     text-align: left;
 }
 
-.whenWhere{
+.tab{
   /* height: 100vh; */
   text-align: center;
   /* background-color: #f4f4f4; */
 }
-.whenWhere > h1{
+.tab > h1{
   font-family: "Homemade Apple";
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
   margin:30px;
 }
-.whenWhere > h2{
+.tab > h2{
   text-decoration: underline
 }
-.whenWhere > .kapell{
+.tab > .kapell{
   width: 20%;
 }
-.whenWhere > .lokalen{
+.tab > .lokalen{
   width: 100%;
 }
 .gifts{
