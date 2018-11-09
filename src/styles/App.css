@@ -1,5 +1,5 @@
 .body{
-  
+
   background-color: #ffc7c7;
   background-color: #ffe2e2;
   display: grid;
@@ -109,18 +109,6 @@ box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
   background-color: #8785a2;
   color: #FFF;
 }
-.howToComeBil > div{
-    background-color: #ffe6cc;
-    margin-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-}
-.howToComeBil > div > div{
-    float: left;
-    background-color: #ffe6cc;
-}
 
 .left{
     width: 40%;
@@ -129,53 +117,16 @@ box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
     width: 60%;
 }
 
-.howToComeBil > div > p{
-    /* background-color: #0000FF; */
-    padding: 0px;
-    margin-top: 10px;
-}
-.howToComeBil > div > div > li{
-    /* background-color: #0000FF; */
-    padding-left: 30px;
-}
-.howToComeBil > div > h5{
-    text-align: left;
-    margin: 0px;
-}
-.howToComeBil > div > h4{
-    text-align: left;
-}
-
-/* Style for div containing information about car travelling */
-
-.howToComeFlyg > div{
-    background-color: #ffe6cc;
-    margin-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-}
-.howToComeFlyg > div > p{
-    /* background-color: #0000FF; */
-    padding: 0px;
-    margin-top: 10px;
-}
-
-.howToComeFlyg > div > h5{
-    text-align: left;
-    margin: 0px;
-}
-.howToComeFlyg > div > h4{
-    text-align: left;
-}
-
 .tab{
   min-height: 100vh;
+  background-color: #ffffff;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: center;
-  background-color: #ffe2e2
-  /* background-color: #f4f4f4; */
+  border-radius: 3%;
 }
+
 .tab > h1{
   font-family: "Homemade Apple";
   font-weight: bold;
@@ -184,16 +135,24 @@ box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
   margin:30px;
   padding-top: 30px;
 }
-.tab > p {
-  padding: 30px;
+.tab > h2{
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  margin:30px;
+  padding-top: 30px;
 }
-
-.tab > .kapell{
+.tab > p {
+  padding: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.kapell{
   height: 450px;
   width: auto;
   margin-right: 15px;
 }
-.tab > .lokalen{
+.lokalen{
   width: 80%;
 }
 .gifts{

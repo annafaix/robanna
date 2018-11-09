@@ -2,15 +2,6 @@ import React from 'react';
 import '../styles/TripMethod.css';
 
 function CarTrip(props){
-  const SelectedCarTrip = props.SelectedCarTrip;
-  let CarTripMethod = null;
-
-  if(SelectedCarTrip === "germany"){
-    CarTripMethod = <CarTripGermany/>
-  }else{
-    CarTripMethod = <CarTripPoland/>
-  }
-
   return(
     <div className="tripMethod">
       <div>
@@ -37,7 +28,7 @@ function CarTrip(props){
 
 function CarTripPoland(props){
   return(
-    <div className="tripMethod">
+    <div>
         <h2>Bil genom Polen</h2>
         <ul>
         <li>Distans att köra: 30 mil till Trelleborg + 88 mil till Kezmarok</li>
@@ -60,7 +51,7 @@ function CarTripPoland(props){
 
 function CarTripGermany(props){
   return(
-    <div className="tripMethod">
+    <div>
       <h2>Bil genom Tyskland</h2>
       <ul>
           <li>Distans att köra: ca. 155 mil</li>

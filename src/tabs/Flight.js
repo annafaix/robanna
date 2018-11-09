@@ -2,19 +2,6 @@ import React from 'react';
 import '../styles/TripMethod.css';
 
 function FlightTrip(props){
-  const SelectedFlightTrip = props.SelectedFlightTrip;
-  let FlightTripMethod = null;
-
-  if(SelectedFlightTrip === "budapest"){
-    FlightTripMethod = <FlightTripBudapest/>
-  }else if(SelectedFlightTrip === "vienna"){
-    FlightTripMethod = <FlightTripVienna/>
-  }else if(SelectedFlightTrip === "prague"){
-    FlightTripMethod = <FlightTripPrague/>
-  }else if(SelectedFlightTrip === "krakow"){
-    FlightTripMethod = <FlightTripPoland/>
-  }
-
   return(
     <div className="tripMethod">
       <div>
