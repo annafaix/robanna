@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import flowers from '../Lager 2.png';
+import flowers from '../Lager2.png';
 
 export default class Whenwhere extends Component {
     render(){
@@ -14,4 +14,3 @@ export default class Whenwhere extends Component {
       )
     }
   }
-  

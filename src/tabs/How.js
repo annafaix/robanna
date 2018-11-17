@@ -20,9 +20,9 @@ export default class How extends Component {
     let method = null
 
     if(this.state.tripMethod === "car"){
-      method = <CarTrip SelectedCarTrip={"germany"}/>
+      method = <CarTrip/>
     }else if(this.state.tripMethod === "flight"){
-      method = <FlightTrip SelectedFlightTrip={"budapest"}/>
+      method = <FlightTrip/>
     }else {
       method = null
     }
@@ -31,8 +31,10 @@ export default class How extends Component {
       <div className="tab">
         <h1>Hur kommer jag dit?</h1>
         <p>
-          Kežmarok är en väldigt mysig liten stad i norra Slovakien. Det finns många sätt att ta sig dit. Tyvärr finns det ingen
-          självklar och enkel väg. Välj mellan exempel på resvägar både med bil eller flyg och buss/tåg.
+          Kežmarok är en väldigt mysig liten stad i norra Slovakien.
+          Det finns många sätt att ta sig dit. Tyvärr finns det ingen
+          självklar och enkel väg. Välj mellan bil eller flyg nedan
+          för att få förslag på resvägar.
         </p>
         <div className="icons">
           <button onClick={()=>this.changeMethod("car")}>Bil</button>
