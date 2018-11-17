@@ -13,14 +13,16 @@
     margin-top: 10px;
 }
 
-.tripMethod > div > h5{
-    text-align: left;
+.tripMethod > div > h1{
+    text-align: center;
     margin: 0px;
 }
-.tripMethod > div > h4{
+.tripMethod > div > h2{
+    text-align: center;
+}
+.tripMethod > div > h3{
     text-align: left;
 }
-
 @media (min-width: 320px) and (max-width: 480px) {
     .tripMethod>div{
         padding: 5px 5px 5px 5px;

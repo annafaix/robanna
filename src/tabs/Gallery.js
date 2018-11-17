@@ -10,7 +10,7 @@ export default class Gallery extends Component {
         super(props);
         this.state={
             current: Img1
-        } 
+        }
     };
 
     changeImg = (img) => {

@@ -41,7 +41,7 @@
   transition: opacity 3s ease-in;
 
   -webkit-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
-  -moz-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);  
+  -moz-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
   box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
 }
 .fade{
@@ -107,7 +107,7 @@
   text-align: center;
   padding-bottom: 10px;
   -webkit-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
-  -moz-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);  
+  -moz-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
   box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
 }
 
@@ -169,9 +169,10 @@ footer{
 /* gallery */
 .container{
   margin:auto;
+  margin-bottom: 30px;
   padding: 0;
   max-width: 760px;
-  background-color: #FFF;
+  background-color: #f4f4f4;
 }
 .main-img img, .imgs img{
   width: 100%;
@@ -186,7 +187,7 @@ footer{
 @keyframes fadeIn {
   from {opacity: 0;}
   to { opacity: 1 }
-} 
+}
 
 .fade-in{
   animation: fadeIn 0.4s ease-in
@@ -212,4 +213,3 @@ footer{
     grid-template-columns: repeat(1,1fr);
   }
 }
-
