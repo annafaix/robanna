@@ -12,10 +12,10 @@ class Menu extends Component {
 
     toggle(){
         const hamMenu = document.querySelector(".hamburger-menu");
-        // const menuDiv = document.querySelectorAll(".menu-item");
         const menu = document.querySelector('.menu');
         const menuNav = document.querySelector('.menu-nav');
         const navItems = document.querySelectorAll('.nav-item')
+
         if(!this.state.showMenu){
             hamMenu.classList.add("close");
             menu.classList.add('show');
@@ -24,13 +24,12 @@ class Menu extends Component {
             this.setState({showMenu:true})
         }
         else{
-            console.log("closed");
             hamMenu.classList.remove("close");
             menu.classList.remove('show');
             menuNav.classList.remove('show');
             navItems.forEach(item => item.classList.remove('show'));
             this.setState({showMenu:false})
-        }
+        } 
     };
 
     render(){

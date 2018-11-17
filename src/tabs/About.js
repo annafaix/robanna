@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import '../styles/App.css';
+import Gallery from "./Gallery.js"
 
 export default class About extends Component {
 /*
@@ -25,8 +26,8 @@ export default class About extends Component {
           och Anna fick en lapp med Roberts adress och telefonnummer på. Jana sa
           skämtsamt "jag har hittat en brudgum till dig Anna!", Anna var inte
           övertygad vid det tillfället men gick ändå med på att stanna för
-          den natten... Detta första möte var dock början på något som ingen vi
-          inte kunde föreställa oss då!
+          den natten... Detta första möte var dock början på något som vi inte 
+          kunde föreställa oss då!
         </p>
         <p>
           Några månader senare besökte Robert och några kompisar Brno där
@@ -38,16 +39,17 @@ export default class About extends Component {
         </p>
         <p>
           Lite senare på våren hade Anna möjligheten att besöka Sverige
-          tillsammans med en teatergrupp som skulle till Lidköping. Robert
+          tillsammans med hennes teatergrupp som skulle till Lidköping. Robert
           tog tillfället i akt att med hjälp av Annas kompisar iscensätta
           en överraskning och tog tåget till Lidköping för att stanna med
-          teatergruppen i deras boende. Direkt efter så åkte Anna med Robert
+          dem i ett par dagar. Det var en lyckad överraskning och vi hade 
+          en väldigt trevlig tid tillsammans. Direkt efter så åkte Anna med Robert
           hem till Göteborg och stannade i några dagar extra. Det var då vi
           bestämde oss för att försöka bli ett par, trots det besvärliga
           avståndet.
         </p>
         <p>
-          Det "enklaste" sättet för oss att träffa lite då och då var i den
+          Det "enklaste" sättet för oss att träffas lite då och då var i den
           mysiga Budapest. Robert tog billigt flyg från Göteborg och Anna tog
           tåget från Brno. En rolig detalj var att det tog ungefär lika lång
           tid att komma dit för oss båda. Att träffas i Budapest var en
@@ -55,29 +57,21 @@ export default class About extends Component {
           Tjeckien.
         </p>
         <p>
-          Samma sommar, några månader efter överraskningen i Lidköping så
-          åkte vi på semester tillsammans. Flög ner till Kroatien, möttes där?
+          Samma sommar åkte vi till Kroatien på en gemensam semester.
+          Lite senare, besökte vi varandras familjer för första gången och året avslutades 
+          genom att vi firade jul i Slovakien.
         </p>
         <p>
-          Lite senare, Anna kom till Sverige? Besökte Åsa? Google photo säger det.
-          därefter kom Robert till Slovakien och
-          träffade Annas familj... (och blev direkt omtyckt av hennes pappa :) )
-        </p>
-        <p>
-          Då Martin var med så åkte vi också hem till honom i
-          Kroatien. Vi åkte sen tillbaka hemåt via Italien, Frankrike,
-          Nederländerna.
-        </p>
-        <p>
-          Sommaren 2014 åkte vi på en galen Eurotrip med totalt sju galna
-          människor. Totalt var vi borta i ungefär en månad och vi besökte
+          Sommaren 2014 åkte vi på en galen Eurotrip med fem andra galningar. 
+          Totalt var vi borta i ungefär en månad och vi besökte bland annat
           Annas föräldrar i Slovakien och bodde hemma hos dem i några dagar.
           Resan avslutades i Göteborg för både Robert och Anna då vi flyttade
-          ihop. För oss var det början på ett liv tillsammans.
+          ihop.
         </p>
         <p>
-          The rest is history, eller vad är det man brukar säga?
-        </p>
+          För oss var det början på ett liv tillsammans.
+          </p>
+        <Gallery/>
       </div>
     )
   }
