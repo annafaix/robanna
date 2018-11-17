@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Img1 from "../img1.jpg"
 import Img2 from "../img2.jpg"
-import Img3 from "../img3.JPG"
+import Img3 from "../img3.jpg"
 import Img4 from "../img4.jpg"
-import Img5 from "../img5.JPG"
+import Img5 from "../img5.jpg"
 
 export default class Gallery extends Component {
     constructor(props){
