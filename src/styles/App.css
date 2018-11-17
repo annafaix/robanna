@@ -132,12 +132,11 @@
   padding-right: 5%;
 }
 .kapell{
-  height: 450px;
-  width: auto;
-  margin-right: 15px;
+  /* max-height: 450px; */
+  width: 90%
 }
 .lokalen{
-  width: 80%;
+  width: 90%;
 }
 
 /* gifts in register */
@@ -172,6 +171,7 @@ footer{
   padding: 0;
   max-width: 760px;
   background-color: #FFF;
+  padding-bottom:20px;
 }
 .main-img img, .imgs img{
   width: 100%;
