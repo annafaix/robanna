@@ -8,11 +8,16 @@ function CarTrip(props){
         <h2>Bil</h2>
         <p>
           Nedan följer lite rekommendationer när det kommer till bilresor. Fördelen
-          med bil är att du kommer direkt till Kezmarok och har möjlighet att stanna
+          med bil är att du kommer direkt till Kežmarok och har möjlighet att stanna
           längs med vägen. Uppskattade priser är tur och retur för två personer med
           vanlig personbil.
         </p>
         <h3>Tips!</h3>
+        <p>
+          Om man vill köra på motorvägen i Slovakien behöver man en elektronisk vinjett. 
+          En för 10 dagar kostar ca 100 SEK. Man kan beställa den  
+          <a href="https://eznamka.sk/en"> HÄR </a>
+        </p>
         <p>
           Kolla upp angående fri datatrafik i Europa, det brukar ingå i de flesta
           abonnemang men kan behövas beställas separat med kontantkort. Det är

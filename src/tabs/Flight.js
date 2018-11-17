@@ -33,10 +33,10 @@ function FlightTrip(props){
           avsevärt mycket behagligare.
         </p>
       </div>
-      <FlightTripBudapest/>
       <FlightTripVienna/>
       <FlightTripPrague/>
       <FlightTripPoland/>
+      <FlightTripBudapest/>
     </div>
   )
 }
@@ -96,7 +96,7 @@ function FlightTripPrague(props){
         <li>Flygbolag: Czech Airlines, Ryanair</li>
         </ul>
         <p>
-            Det går att flyga med Ryanair eller Czech Airlines till
+            Det går att flyga med Norwegian, Ryanair eller Czech Airlines till
             Prag och sedan ta tåg eller buss därifrån. Resan från
             Prag till Poprad är ca. 6,5 timmar, men det brukar vara
             bra standard och service på både tåg och buss.
@@ -112,7 +112,7 @@ function FlightTripPrague(props){
 function FlightTripPoland(props){
   return(
     <div>
-        <h2>Flyg till Krakow och taxi/hyrbil till Kezmarok</h2>
+        <h2>Flyg till Krakow och taxi/hyrbil till Kežmarok</h2>
         <ul>
         <li>Uppskattad tid: 2 timmar flyg + 3 timmar bil/taxi</li>
         <li>Uppskattad kostnad: ca. 800kr (flyg) + 1000kr (taxi)</li>

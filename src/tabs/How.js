@@ -32,12 +32,11 @@ export default class How extends Component {
         <h1>Hur kommer jag dit?</h1>
         <p>
           Kežmarok är en väldigt mysig liten stad i norra Slovakien. Det finns många sätt att ta sig dit. Tyvärr finns det ingen
-          självklar och enkel väg. Nedan finns exempel på resvägar både med bil
-          samt flyg och buss/tåg.
+          självklar och enkel väg. Välj mellan exempel på resvägar både med bil eller flyg och buss/tåg.
         </p>
         <div className="icons">
-          <i className="fas fa-car fa-4x" onClick={()=>this.changeMethod("car")}></i>eller
-          <i className="fas fa-plane fa-4x" onClick={()=>this.changeMethod("flight")}></i>
+          <button onClick={()=>this.changeMethod("car")}>Bil</button>
+          <button onClick={()=>this.changeMethod("flight")}>Flyg</button>
         </div>
         {method}
       </div>
