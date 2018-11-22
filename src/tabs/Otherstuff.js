@@ -12,7 +12,7 @@ export default class Otherstuff extends Component {
       <div className="tab">
         <h1>Mer att göra!</h1>
         <p>
-          Det finns mycket att göra. Spis castle mm.
+          Kommer mer info snart!
         </p>
       </div>
     )

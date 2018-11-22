@@ -12,8 +12,7 @@ export default class Slovak extends Component {
       <div className="tab">
         <h1>Hej & Ahoj!</h1>
         <p>
-          Det går bra att prata engelska i Slovakien, problemet blir bara att det är inte mågna som vill eller kan engelska (framförallt i mindre städer och lite äldre genaration). 
-          Träna på enkla ord och fraser!
+          Kommer mer info snart!
         </p>
 
       </div>
