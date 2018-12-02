@@ -14,8 +14,10 @@ class App extends Component {
   constructor(props){
     super(props);
     this.fadein = this.fadein.bind(this);  
+    this.toggle = this.toggle.bind(this);
     this.state = {
-      choosenTab: "start"     
+      choosenTab: "start",
+      showMenu : false
     }
   }
 
@@ -26,29 +28,52 @@ class App extends Component {
       // fadingH1.className += "fade"
       // fadingH2.className += "fade"
   }
+  toggle(){
+    const hamMenu = document.querySelector(".hamburger-menu");
+    const menu = document.querySelector('.menu');
+    const menuNav = document.querySelector('.menu-nav');
+    const navItems = document.querySelectorAll('.nav-item')
+
+    if(!this.state.showMenu){
+        hamMenu.classList.add("close");
+        menu.classList.add('show');
+        menuNav.classList.add('show');
+        navItems.forEach(item => item.classList.add('show'));
+        this.setState({showMenu: !this.state.showMenu})  
+    }
+    else{
+        hamMenu.classList.remove("close");
+        menu.classList.remove('show');
+        menuNav.classList.remove('show');
+        navItems.forEach(item => item.classList.remove('show'));
+        this.setState({showMenu:false})
+    } 
+};
   changeTab = (tab)=> {
     this.setState({choosenTab: tab})
+    this.toggle()
   }
     render() {
-
-    let tab = <Landing/>;
-    if(this.state.choosenTab === "about"){
-      tab = <About/>
-    }else if(this.state.choosenTab === "whenwhere"){
-      tab =  <Whenwhere/>
-    }else if(this.state.choosenTab === "how"){
-      tab =  <How/>
-    }else if(this.state.choosenTab === "register"){
-      tab =  <Register/>
-    }else if(this.state.choosenTab === "slovak"){
-      tab =  <Slovak/>
-    }else if(this.state.choosenTab === "otherstuff"){
-      tab =  <Otherstuff/>
-    }
+      let tab;
+        if(this.state.choosenTab === "start"){
+        tab = <Landing/>
+        }else if(this.state.choosenTab === "about"){
+          tab = <About/>
+        }else if(this.state.choosenTab === "whenwhere"){
+          tab =  <Whenwhere/>
+        }else if(this.state.choosenTab === "how"){
+          tab =  <How/>
+        }else if(this.state.choosenTab === "register"){
+          tab =  <Register/>
+        }else if(this.state.choosenTab === "slovak"){
+          tab =  <Slovak/>
+        }else if(this.state.choosenTab === "otherstuff"){
+          tab =  <Otherstuff/>
+        }
 
     return (
     <div className="body" onLoad={()=>{this.fadein()}}>
-      <Menu changeTab={this.changeTab}/>
+      <Menu changeTab={this.changeTab} toggle={this.toggle} />
       <main>
         {tab}
       </main>

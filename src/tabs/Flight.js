@@ -27,11 +27,6 @@ function FlightTrip(props){
         <p>
           Tänk på kostnader som tillkommer för transfer till/från flygplats!
         </p>
-        <p>
-          Lägg gärna en liten extra slant för att reservera plats eller till och
-          med Business Class. Det brukar inte kosta mycket mer och resan blir
-          avsevärt mycket behagligare.
-        </p>
       </div>
       <FlightTripPrague/>
       <FlightTripVienna/>
