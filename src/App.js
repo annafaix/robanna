@@ -1,67 +1,84 @@
 import React, { Component } from 'react';
-import landImg from './wedding_picture.jpg';
-import flowers from './Lager 2.png';
-import './App.css';
+import './styles/App.css';
+import './styles/Menu.css';
 import Menu from "./Menu.js"
-import Where from "./Where.js"
-import { Button, Divider, Form, TextArea } from 'semantic-ui-react'
-
-
+import About from "./tabs/About.js"
+import Whenwhere from "./tabs/Whenwhere.js"
+import How from "./tabs/How.js"
+import Register from "./tabs/Register.js"
+import Slovak from "./tabs/Slovak.js"
+import Otherstuff from "./tabs/Otherstuff.js"
+import Landing from "./tabs/Landing.js"
 
 class App extends Component {
   constructor(props){
     super(props);
-    this.fadein = this.fadein.bind(this);
+    this.fadein = this.fadein.bind(this);  
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      choosenTab: "start",
+      showMenu : false
+    }
   }
 
   fadein(){
-      let fading = document.getElementsByClassName("landing")[0];
-      fading.className += " fade"
+      // let fadingH1 = document.getElementsByTagName("h1")[0];
+      // let fadingH2 = document.getElementsByTagName("h2")[0];
+      // console.log(fadingH1, fadingH2)
+      // fadingH1.className += "fade"
+      // fadingH2.className += "fade"
   }
-  render() {
-    return (
-    <div className="body">
-      <Menu />
-      <main>
-        <div className="landing" onLoad={this.fadein}>
-          <img src={flowers} className="flowers" alt="flowers"/>
-          <h1>Anna och Robert</h1>
-          <h2>8:e juni 2019</h2>
-          <i className="angle down icon"></i>
-        </div>
-        <h1>Vi ska gifta oss!</h1>
-        <div className="beginning bigImg">
-        <h2>Vi ska gifta oss!</h2>
-        <div className="container">
-        <div className="main-image">
-        <img src={landImg} alt="wedding_picture"/>
-        </div>
-        </div>
-        <h2>Hur allt började</h2>
-        <p>
-        Anna plugade svenska, teater i Sverige, couchsurfing, resa till Brno, Kroatien tillsammans, Budapest,  första träffen med föräldrar, Rysy, jul i Kezmarok, eurotrip, flytt till Sverige, Robert har börjat lära sig slovakiska</p>
-        </div>
+  toggle(){
+    const hamMenu = document.querySelector(".hamburger-menu");
+    const menu = document.querySelector('.menu');
+    const menuNav = document.querySelector('.menu-nav');
+    const navItems = document.querySelectorAll('.nav-item')
 
-        <div className="register">
-        <h2>Jag vill anmäla mig!</h2>
-        <p>Skriv i meddelandet eventuella allergier samt namn på alla i ert sällskap/familj som kommer</p>
-        <Form size="large">
-         <Form.Group inline>
-           <Form.Field label='Ditt namn' control='input' placeholder='' required />
-           <Form.Field  label='Email' control='input' placeholder='@'  required />
-          </Form.Group>
-          <Form.Field
-              id='form-textarea-control-opinion'
-              control={TextArea}
-              label='Medelande'/>
-            <Button type='submit'>Submit</Button>
-            <Divider />
-          </Form>
-        </div>
-        <Where/>
+    if(!this.state.showMenu){
+        hamMenu.classList.add("close");
+        menu.classList.add('show');
+        menuNav.classList.add('show');
+        navItems.forEach(item => item.classList.add('show'));
+        this.setState({showMenu: !this.state.showMenu})  
+    }
+    else{
+        hamMenu.classList.remove("close");
+        menu.classList.remove('show');
+        menuNav.classList.remove('show');
+        navItems.forEach(item => item.classList.remove('show'));
+        this.setState({showMenu:false})
+    } 
+};
+  changeTab = (tab)=> {
+    this.setState({choosenTab: tab})
+    this.toggle()
+  }
+    render() {
+      let tab;
+        if(this.state.choosenTab === "start"){
+        tab = <Landing/>
+        }else if(this.state.choosenTab === "about"){
+          tab = <About/>
+        }else if(this.state.choosenTab === "whenwhere"){
+          tab =  <Whenwhere/>
+        }else if(this.state.choosenTab === "how"){
+          tab =  <How/>
+        }else if(this.state.choosenTab === "register"){
+          tab =  <Register/>
+        }else if(this.state.choosenTab === "slovak"){
+          tab =  <Slovak/>
+        }else if(this.state.choosenTab === "otherstuff"){
+          tab =  <Otherstuff/>
+        }
+
+    return (
+    <div className="body" onLoad={()=>{this.fadein()}}>
+      <Menu changeTab={this.changeTab} toggle={this.toggle} />
+      <main>
+        {tab}
       </main>
       <footer>
-      Made by Robert & Anna with lots of <i className="fas fa-heart"></i>
+        Made by Robert & Anna <br/>with lots of <i className="fas fa-heart"></i>
       </footer>
     </div>
 

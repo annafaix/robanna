@@ -1,0 +1,33 @@
+/* Style for div containing information about car travelling */
+.tripMethod > div{
+    border-bottom: 1px solid black;
+    text-align: left;
+    margin: 30px;
+    padding: 20px;
+   
+}
+.tripMethod > div > p{
+    padding: 0px;
+    margin-top: 10px;
+}
+.tripMethod a{
+    color: #000
+
+}
+.tripMethod > div > h1{
+    text-align: center;
+    margin: 0px;
+}
+.tripMethod > div > h2{
+    text-align: center;
+}
+.tripMethod > div > h3{
+    text-align: left;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .tripMethod>div{
+        padding: 5px 5px 5px 5px;
+        margin-left:0;
+        margin-right: 0;
+    }
+}

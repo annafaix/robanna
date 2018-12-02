@@ -1,0 +1,217 @@
+.body{
+  background-color: #ffc7c7;
+  background-color: #ffe2e2;
+  display: grid;
+  font-family: "Open Sans", monospace;
+  font-size: 20px;
+  grid-template-rows: 0fr auto;
+  grid-template-columns: 0.5fr minmax(100px, 3fr) 0.5fr ;
+  grid-row-gap: 15px;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.flowers{
+  width: 100vw;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.landing{
+  min-height: 100vh;
+  grid-column: 2/ 3;
+  background-color: #ffe2e2;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  -webkit-transition: opacity 3s ease-in;
+  -moz-transition: opacity 3s ease-in;
+  -ms-transition: opacity 3s ease-in;
+  -o-transition: opacity 3s ease-in;
+  transition: opacity 3s ease-in;
+
+  -webkit-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
+  -moz-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
+  box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
+}
+.fade{
+  opacity:1;
+}
+
+
+.landing h1{
+  /* opacity: 0; */
+  align-self: center;
+  font-family: "Homemade Apple";
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  z-index: 1;
+}
+.landing h2{
+  /* opacity: 0; */
+  align-self: center;
+  font-family: "Homemade Apple";
+  font-size: 40px;
+  margin: 0;
+}
+
+.text-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: -70%;
+}
+.text-wrapper h1{
+  font-family: "Homemade Apple";
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Style for div containing information about car travelling */
+.icons button{
+  background-color: #f7d9ca;
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  font-size: 25px;
+  letter-spacing: 3px;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: background-color .5s;
+  margin:15px;
+}
+.icons button:hover{
+  background-color: #000;
+  color: #fff;
+}
+.tab{
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  padding-bottom: 10px;
+  -webkit-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
+  -moz-box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
+  box-shadow: 0px 0px 63px 0px rgba(135,133,162,1);
+}
+
+.tab > h1{
+  font-family: "Homemade Apple";
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  /* margin:30px; */
+  padding-top: 50px;
+}
+.tab > h2{
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  margin:30px;
+  /* padding-top: 30px; */
+}
+.tab > p {
+  padding: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.tab a {
+  color: #000
+}
+.kapell{
+  /* max-height: 450px; */
+  width: 90%
+}
+.lokalen{
+  width: 90%;
+}
+
+/* gifts in register */
+giftBtn{
+  background-color: #f7d9ca;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  font-size: 25px;
+  letter-spacing: 3px;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: background-color .5s;
+}
+.giftBtn:hover{
+  background-color: #fff;
+  transition: background-color .5s;
+}
+
+/* footer */
+footer{
+  padding: 30px;
+  font-family: "Homemade Apple";
+  grid-column: 1/ span 4;
+  /* border-top: 1px solid #000; */
+  text-align: center;
+  font-weight: 400;
+}
+/* gallery */
+.container{
+  margin:auto;
+  margin-bottom: 30px;
+  padding: 0;
+  max-width: 760px;
+  background-color: #f4f4f4;
+}
+.main-img img, .imgs img{
+  width: 100%;
+}
+.imgs{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 5px;
+  cursor: pointer;
+  /* margin-bottom: 20px; */
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to { opacity: 1 }
+}
+
+.fade-in{
+  animation: fadeIn 0.4s ease-in
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .body{
+    grid-template-columns: 0.2fr minmax(100px, 3fr) 0.2fr ;
+  }
+  .tab h1{
+    font-size: 25px;
+  }
+  .tab p{
+    font-size: 19px;
+  }
+  .landing h1{
+    font-size: 40px;
+  }
+  .main-img{
+    display: none;
+  }
+  .imgs{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
