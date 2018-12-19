@@ -134,9 +134,16 @@
 .tab a {
   color: #000
 }
-.kapell{
+ .kapell{
+  margin:10px;
+  max-height: 450px;
+  width: auto
+}
+ .slott{
   /* max-height: 450px; */
-  width: 90%
+  height: auto;
+  width: 90%;
+  margin:10px;
 }
 .lokalen{
   width: 90%;
@@ -203,7 +210,7 @@ footer{
     font-size: 25px;
   }
   .tab p{
-    font-size: 19px;
+    /* font-size: 19px; */
   }
   .landing h1{
     font-size: 40px;
@@ -213,5 +220,12 @@ footer{
   }
   .imgs{
     grid-template-columns: repeat(1,1fr);
+  }
+  .kapell{
+    /* max-height: 450px; */
+    width: 90%
+  }
+  .slott{
+    width:90%
   }
 }

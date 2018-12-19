@@ -7,7 +7,7 @@
    
 }
 .tripMethod > div > p{
-    padding: 0px;
+    padding: 10px;
     margin-top: 10px;
 }
 .tripMethod a{
@@ -23,11 +23,18 @@
 }
 .tripMethod > div > h3{
     text-align: left;
+    padding: 10px;
+}
+.tripMethod ul{
+    list-style-position: outside
 }
 @media (min-width: 320px) and (max-width: 480px) {
     .tripMethod>div{
         padding: 5px 5px 5px 5px;
         margin-left:0;
         margin-right: 0;
+    }
+    .tripMethod ul li {
+        font-size: 20px;
     }
 }
